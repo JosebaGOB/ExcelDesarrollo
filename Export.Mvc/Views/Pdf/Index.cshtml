@@ -1,0 +1,16 @@
+﻿@{
+    ViewBag.Title = "PDF Generator";
+}
+
+<h2>@ViewBag.Title</h2>
+<form method="post" action="@Url.Action("CrearPdf")">
+    @Html.Label("Nombre del archivo", "Nombre del archivo (.pdf)")
+    <br />
+    @Html.TextBox("nombreArchivo")
+    <br />
+    @Html.Label("Texto", "Texto")
+    <br />
+    @Html.TextArea("Texto")
+    <hr />
+    <input type="submit" value="Crear pdf" />
+</form>

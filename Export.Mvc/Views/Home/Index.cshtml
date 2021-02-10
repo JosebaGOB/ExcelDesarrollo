@@ -1,0 +1,12 @@
+﻿@using System.Web.Mvc.Html
+
+@{
+    ViewBag.Title = "Home";
+}
+
+<h2>Exportaciones:</h2>
+<br />
+@Html.ActionLink("Exportar a Excel", "Index", "Excel")
+<br />
+@Html.ActionLink("Exportar a Pdf", "Index", "Pdf")
+
